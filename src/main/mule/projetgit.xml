@@ -15,7 +15,10 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/java
 ---
-FirstName: "Aya"]]></ee:set-payload>
+{FirstName: "Aya",
+LastName: "D"
+
+}]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="5f0cc907-f9fd-4bec-b4ef-ecf01dff46d2" message='"Hello World"'/>
